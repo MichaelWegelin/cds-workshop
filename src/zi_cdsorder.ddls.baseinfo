@@ -3,6 +3,7 @@
 {
 "FROM":
 [
+"ZI_CDSCUSTOMER",
 "ZCDS_ORDER"
 ],
 "ASSOCIATED":

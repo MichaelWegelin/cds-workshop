@@ -6,7 +6,9 @@
 "ZCDS_CUSTOMER"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_CDSORDER"
+],
 "BASE":
 [],
 "ANNO_REF":
