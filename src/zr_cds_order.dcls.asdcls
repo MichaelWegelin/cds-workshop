@@ -1,0 +1,12 @@
+@EndUserText.label: 'Zugriffsschutz für Aufträge'
+@MappingRole: true
+define role ZR_CDS_ORDER
+{
+  grant select on ZI_CDSOrder
+    where ( CustomerId ) =
+      aspect pfcg_auth(
+        Z_CDS_CUS,
+        ZCUSTOMER,
+        ACTVT = '03'
+      );
+}

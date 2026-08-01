@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZCDS_IAM_APP_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>CDS Workshop: IAM App</DESCRIPTION>
+     <RESPONSIBLE>CB9980000000</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>H01</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZCDS_WORKSHOP</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZCDS_IAM_APP_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <AUTH>
+     <item>
+      <AUTH_OBJECT>Z_CDS_CUS</AUTH_OBJECT>
+      <STATUS>U</STATUS>
+      <TEXT>CDS Workshop: Berechtigungsobjekt für Kunden</TEXT>
+      <AUTH_ITEM>
+       <item>
+        <UUID>DtXOl9RMH+GjvZucmS9gYw==</UUID>
+        <AUTH_OBJECT>Z_CDS_CUS</AUTH_OBJECT>
+        <AUTH_OBJECT_INSTANCE>0001</AUTH_OBJECT_INSTANCE>
+        <TEXT>CDS Workshop: Berechtigungsobjekt für Kunden</TEXT>
+        <STATUS>U</STATUS>
+        <VALUES>
+         <item>
+          <FIELD>ZCUSTOMER</FIELD>
+          <VALUE>C1000</VALUE>
+          <VALUES>
+           <item>
+            <UUID>DtXOl9RMH+GjvZucmS+AYw==</UUID>
+            <LOW_VALUE>C1000</LOW_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>CDS Workshop: Kundennummer</TEXT>
+          <STATUS>U</STATUS>
+         </item>
+         <item>
+          <FIELD>ACTVT</FIELD>
+          <VALUE>Display</VALUE>
+          <VALUES>
+           <item>
+            <UUID>DtXOl9RMH+GjvZucmS+gYw==</UUID>
+            <LOW_VALUE>03</LOW_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>Activity</TEXT>
+          <STATUS>U</STATUS>
+          <IS_ACTVT>X</IS_ACTVT>
+         </item>
+        </VALUES>
+       </item>
+      </AUTH_ITEM>
+     </item>
+    </AUTH>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

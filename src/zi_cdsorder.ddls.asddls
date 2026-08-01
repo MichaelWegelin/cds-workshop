@@ -1,5 +1,5 @@
 @EndUserText.label: 'CDS Workshop: Aufträge'
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.authorizationCheck: #CHECK
 define view entity ZI_CDSOrder
   as select from zcds_order
   association [0..1] to ZI_CDSCustomer  as _Customer 
