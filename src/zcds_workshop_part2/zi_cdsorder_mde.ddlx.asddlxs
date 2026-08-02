@@ -1,0 +1,10 @@
+@Metadata.layer: #CUSTOMER
+
+annotate entity ZI_CDSOrder with
+{
+  @EndUserText.label: 'Customer Group'
+  ZZCustomerGroup;
+
+  @EndUserText.label: 'Delivery Situation'
+  ZZDeliverySituation;
+}

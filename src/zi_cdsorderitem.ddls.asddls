@@ -17,15 +17,15 @@ define view entity ZI_CDSOrderItem
       product_id    as ProductId,
 
       @EndUserText.label: 'Quantity'
-      @Semantics.quantity.unitOfMeasure: 'Unit'
+      @Semantics.quantity.unitOfMeasure: 'UnitCode'
       quantity      as Quantity,
 
       @EndUserText.label: 'Unit of Measure'
-      unit_code        as Unit,
+      unit_code        as UnitCode,
 
-      @EndUserText.label: 'Net Amount'
+      @EndUserText.label: 'Unit Price'
       @Semantics.amount.currencyCode: 'CurrencyCode'
-      unit_price    as NetAmount,
+      unit_price    as UnitPrice,
 
       @EndUserText.label: 'Currency Code'
       currency_code as CurrencyCode,

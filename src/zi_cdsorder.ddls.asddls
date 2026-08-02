@@ -1,5 +1,8 @@
 @EndUserText.label: 'CDS Workshop: Orders'
 @AccessControl.authorizationCheck: #CHECK
+@AbapCatalog.viewEnhancementCategory: [ #PROJECTION_LIST ]
+@Metadata.allowExtensions: true
+
 define view entity ZI_CDSOrder
   as select from zcds_order
   association [0..1] to ZI_CDSCustomer  as _Customer 

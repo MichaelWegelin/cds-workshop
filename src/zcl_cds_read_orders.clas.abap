@@ -52,8 +52,8 @@ CLASS zcl_cds_read_orders IMPLEMENTATION.
              ProductId,
              \_Product-ProductName,
              Quantity,
-             Unit,
-             NetAmount,
+             UnitCode,
+             UnitPrice,
              CurrencyCode
       WHERE OrderId = 'O10001'
       ORDER BY ItemNumber
@@ -70,8 +70,8 @@ CLASS zcl_cds_read_orders IMPLEMENTATION.
              Item~ProductId,
              Item~\_Product-ProductName,
              Item~Quantity,
-             Item~Unit,
-             Item~NetAmount,
+             Item~UnitCode,
+             Item~UnitPrice,
              Item~CurrencyCode
       WHERE Item~OrderId = 'O10001'
       ORDER BY Item~ItemNumber
