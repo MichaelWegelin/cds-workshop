@@ -1,4 +1,4 @@
-@EndUserText.label: 'Zugriffsschutz für Aufträge'
+@EndUserText.label: 'ZCDS Workshop: Access Control for Orders'
 @MappingRole: true
 define role ZR_CDS_ORDER
 {

@@ -5,7 +5,7 @@
    <DDLS>
     <DDLNAME>ZI_CDSORDER</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
-    <DDTEXT>Order</DDTEXT>
+    <DDTEXT>CDS Workshop: Orders</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

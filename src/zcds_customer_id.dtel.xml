@@ -10,11 +10,11 @@
     <SCRLEN1>10</SCRLEN1>
     <SCRLEN2>20</SCRLEN2>
     <SCRLEN3>40</SCRLEN3>
-    <DDTEXT>CDS Workshop: Kundennummer</DDTEXT>
-    <REPTEXT>Kundennummer</REPTEXT>
-    <SCRTEXT_S>KundenNr.</SCRTEXT_S>
-    <SCRTEXT_M>Kundennummer</SCRTEXT_M>
-    <SCRTEXT_L>Kundennummer</SCRTEXT_L>
+    <DDTEXT>CDS Workshop: Customer ID</DDTEXT>
+    <REPTEXT>Customer ID</REPTEXT>
+    <SCRTEXT_S>Customer</SCRTEXT_S>
+    <SCRTEXT_M>Customer ID</SCRTEXT_M>
+    <SCRTEXT_L>Customer ID</SCRTEXT_L>
     <DTELMASTER>E</DTELMASTER>
     <REFKIND>D</REFKIND>
     <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>

@@ -22,13 +22,13 @@
      <item>
       <AUTH_OBJECT>Z_CDS_CUS</AUTH_OBJECT>
       <STATUS>U</STATUS>
-      <TEXT>CDS Workshop: Berechtigungsobjekt für Kunden</TEXT>
+      <TEXT>CDS Workshop: Authorization Object for Customers</TEXT>
       <AUTH_ITEM>
        <item>
         <UUID>DtXOl9RMH+GjvZucmS9gYw==</UUID>
         <AUTH_OBJECT>Z_CDS_CUS</AUTH_OBJECT>
         <AUTH_OBJECT_INSTANCE>0001</AUTH_OBJECT_INSTANCE>
-        <TEXT>CDS Workshop: Berechtigungsobjekt für Kunden</TEXT>
+        <TEXT>CDS Workshop: Authorization Object for Customers</TEXT>
         <STATUS>U</STATUS>
         <VALUES>
          <item>
@@ -40,7 +40,7 @@
             <LOW_VALUE>C1000</LOW_VALUE>
            </item>
           </VALUES>
-          <TEXT>CDS Workshop: Kundennummer</TEXT>
+          <TEXT>CDS Workshop: Customer ID</TEXT>
           <STATUS>U</STATUS>
          </item>
          <item>

@@ -5,7 +5,7 @@
    <DDLS>
     <DDLNAME>ZI_CDSCATEGORY</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
-    <DDTEXT>Produktkategorien</DDTEXT>
+    <DDTEXT>CDS WOrkshop: Product Categories</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

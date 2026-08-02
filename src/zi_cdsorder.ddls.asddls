@@ -1,4 +1,4 @@
-@EndUserText.label: 'CDS Workshop: Aufträge'
+@EndUserText.label: 'CDS Workshop: Orders'
 @AccessControl.authorizationCheck: #CHECK
 define view entity ZI_CDSOrder
   as select from zcds_order
@@ -7,49 +7,49 @@ define view entity ZI_CDSOrder
   association [0..*] to ZI_CDSOrderItem as _Items    
     on $projection.OrderId = _Items.OrderId
 {
-      @EndUserText.label: 'Auftragsnummer'
+      @EndUserText.label: 'Order Id'
   key order_id           as OrderId,
 
-      @EndUserText.label: 'Kundennummer'
+      @EndUserText.label: 'Customer Id'
       customer_id        as CustomerId,
 
-      @EndUserText.label: 'Kundenname'
+      @EndUserText.label: 'Customer Name'
       _Customer.CustomerName as CustomerName,
 
-      @EndUserText.label: 'Ort des Kunden'
+      @EndUserText.label: 'Customer City'
       _Customer.City         as CustomerCity,
 
-      @EndUserText.label: 'Auftragsdatum'
+      @EndUserText.label: 'Order Date'
       order_date         as OrderDate,
 
-      @EndUserText.label: 'Wunschdatum'
+      @EndUserText.label: 'Requested Delivery Date'
       requested_date     as RequestedDate,
 
-      @EndUserText.label: 'Auftragsart'
+      @EndUserText.label: 'Order Type'
       order_type         as OrderType,
 
-      @EndUserText.label: 'Bezeichnung der Auftragsart'
+      @EndUserText.label: 'Order Type Text'
       case order_type
         when 'O' then 'Online'
-        when 'D' then 'Direktvertrieb'
-        else 'Unbekannt'
+        when 'D' then 'Direct Sales'
+        else 'Unknown'
       end                as OrderTypeText,
 
-      @EndUserText.label: 'Auftragsstatus'
+      @EndUserText.label: 'Order State'
       order_status       as OrderStatus,
 
-      @EndUserText.label: 'Bezeichnung des Auftragsstatus'
+      @EndUserText.label: 'Order State Text'
       case order_status
-        when 'N' then 'Neu'
-        when 'P' then 'In Bearbeitung'
-        when 'C' then 'Abgeschlossen'
-        else 'Unbekannt'
+        when 'N' then 'New'
+        when 'P' then 'In Process'
+        when 'C' then 'Completed'
+        else 'Unknown'
       end                as OrderStatusText,
 
-      @EndUserText.label: 'Verkaufsorganisation'
+      @EndUserText.label: 'Sales Organization'
       sales_organization as SalesOrganization,
 
-      @EndUserText.label: 'Währung'
+      @EndUserText.label: 'Currency Code'
       currency_code      as CurrencyCode,
 
       _Customer,

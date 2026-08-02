@@ -5,7 +5,7 @@
    <DDLS>
     <DDLNAME>ZI_CDSPRODUCT</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
-    <DDTEXT>Product</DDTEXT>
+    <DDTEXT>CDS Workshop: Products</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

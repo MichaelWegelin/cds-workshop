@@ -1,4 +1,4 @@
-@EndUserText.label: 'CDS Workshop: Auftragspositionen'
+@EndUserText.label: 'CDS Workshop: Order Items'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 define view entity ZI_CDSOrderItem
   as select from zcds_order_item
@@ -7,29 +7,30 @@ define view entity ZI_CDSOrderItem
   association [1..1] to ZI_CDSOrder as _Order
     on $projection.OrderId = _Order.OrderId
 {
-      @EndUserText.label: 'Auftragsnummer'
+      @EndUserText.label: 'Order Id'
   key order_id      as OrderId,
 
-      @EndUserText.label: 'Positionsnummer'
+      @EndUserText.label: 'Item Number'
   key item_number   as ItemNumber,
 
-      @EndUserText.label: 'Produktnummer'
+      @EndUserText.label: 'Product ID'
       product_id    as ProductId,
 
-      @EndUserText.label: 'Menge'
+      @EndUserText.label: 'Quantity'
       @Semantics.quantity.unitOfMeasure: 'Unit'
       quantity      as Quantity,
 
-      @EndUserText.label: 'Mengeneinheit'
+      @EndUserText.label: 'Unit of Measure'
       unit_code        as Unit,
 
-      @EndUserText.label: 'Nettobetrag'
+      @EndUserText.label: 'Net Amount'
       @Semantics.amount.currencyCode: 'CurrencyCode'
       unit_price    as NetAmount,
 
-      @EndUserText.label: 'Währung'
+      @EndUserText.label: 'Currency Code'
       currency_code as CurrencyCode,
 
+      @EndUserText.label: 'Discount (%)'
       discount_percent as DiscountPercent,
 
       _Product,

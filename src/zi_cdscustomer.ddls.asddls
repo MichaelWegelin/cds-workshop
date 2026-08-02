@@ -1,20 +1,21 @@
-@EndUserText.label: 'CDS Workshop: Kunden'
+@EndUserText.label: 'CDS Workshop: Customers'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 define view entity ZI_CDSCustomer
   as select from zcds_customer
   association [0..*] to ZI_CDSOrder as _Orders on
     $projection.CustomerId = _Orders.CustomerId
 {
-      @EndUserText.label: 'Kundennummer'
+      @EndUserText.label: 'Customer Id'
   key customer_id   as CustomerId,
-      @EndUserText.label: 'Kundenname'
+      @EndUserText.label: 'Customer Name'
       customer_name as CustomerName,
-      @EndUserText.label: 'Stadt'
+      @EndUserText.label: 'City'
       city          as City,
-      @EndUserText.label: 'Land'
+      @EndUserText.label: 'Country'
       country_code  as CountryCode,
-      @EndUserText.label: 'Kundengruppe'
+      @EndUserText.label: 'Customer Group'
       customer_group as CustomerGroup,
+      @EndUserText.label: 'Creation Date'
       created_on    as CreatedOn,
       _Orders
 }

@@ -4,7 +4,7 @@
   <asx:values>
    <SIA3>
     <NAME>Z_CDS_CUS</NAME>
-    <DESCRIPTION>CDS Workshop: Berechtigungsobjekt für Kunden</DESCRIPTION>
+    <DESCRIPTION>CDS Workshop: Authorization Object for Customers</DESCRIPTION>
     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
     <AUTH_OBJECT_ID>Z_CDS_CUS</AUTH_OBJECT_ID>
     <AUTH_OBJECT>Z_CDS_CUS</AUTH_OBJECT>
