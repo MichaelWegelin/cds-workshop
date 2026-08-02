@@ -268,7 +268,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P100'
         quantity = '2'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '1249.00'
         currency_code = 'EUR'
         discount_percent = '5.00' )
@@ -277,7 +277,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0020'
         product_id = 'P200'
         quantity = '2'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '179.00'
         currency_code = 'EUR'
         discount_percent = '0.00' )
@@ -286,7 +286,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P110'
         quantity = '5'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '2099.00'
         currency_code = 'EUR'
         discount_percent = '10.00' )
@@ -295,7 +295,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0020'
         product_id = 'P210'
         quantity = '10'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '329.00'
         currency_code = 'EUR'
         discount_percent = '7.50' )
@@ -304,7 +304,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P300'
         quantity = '20'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '139.00'
         currency_code = 'EUR'
         discount_percent = '5.00' )
@@ -313,7 +313,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P100'
         quantity = '3'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '1299.00'
         currency_code = 'EUR'
         discount_percent = '0.00' )
@@ -322,7 +322,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0020'
         product_id = 'P220'
         quantity = '3'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '109.00'
         currency_code = 'EUR'
         discount_percent = '0.00' )
@@ -331,7 +331,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P310'
         quantity = '12'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '479.00'
         currency_code = 'EUR'
         discount_percent = '12.50' )
@@ -340,7 +340,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0020'
         product_id = 'P200'
         quantity = '12'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '175.00'
         currency_code = 'EUR'
         discount_percent = '8.00' )
@@ -349,7 +349,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0010'
         product_id = 'P210'
         quantity = '4'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '349.00'
         currency_code = 'EUR'
         discount_percent = '0.00' )
@@ -358,7 +358,7 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
         item_number = '0020'
         product_id = 'P300'
         quantity = '4'
-        unit_code = 'PC'
+        unit_code = 'ST'
         unit_price = '149.00'
         currency_code = 'EUR'
         discount_percent = '0.00' )

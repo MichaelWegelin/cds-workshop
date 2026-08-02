@@ -1,0 +1,81 @@
+@Metadata.layer: #CUSTOMER
+@UI.chart: [
+  {
+    qualifier:  'ItemValues',
+    title:      'Order Value by Product',
+    chartType:  #COLUMN,
+
+    dimensions: [
+      'ProductName'
+    ],
+
+    measures: [
+      'NetAmount'
+    ],
+
+    dimensionAttributes: [
+      {
+        dimension: 'ProductName',
+        role:      #CATEGORY
+      }
+    ],
+
+    measureAttributes: [
+      {
+        measure: 'NetAmount',
+        role:    #AXIS_1
+      }
+    ]
+  }
+]
+
+annotate entity ZC_CDSOrderItem with
+{
+  @UI.lineItem: [
+    {
+      position:   10,
+      importance: #HIGH
+    }
+  ]
+  ItemNumber;
+
+  @UI.lineItem: [
+    {
+      position:   20,
+      importance: #MEDIUM
+    }
+  ]
+  ProductId;
+
+  @UI.lineItem: [
+    {
+      position:   30,
+      importance: #HIGH
+    }
+  ]
+  ProductName;
+
+  @UI.lineItem: [
+    {
+      position:   40,
+      importance: #HIGH
+    }
+  ]
+  Quantity;
+
+  @UI.lineItem: [
+    {
+      position:   50,
+      importance: #MEDIUM
+    }
+  ]
+  UnitPrice;
+
+  @UI.lineItem: [
+    {
+      position:   60,
+      importance: #MEDIUM
+    }
+  ]
+  DiscountPercent;
+}

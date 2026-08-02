@@ -1,0 +1,228 @@
+@Metadata.layer: #CUSTOMER
+
+@UI.headerInfo: {
+  typeName:       'Order',
+  typeNamePlural: 'Orders',
+  title: {
+    type:  #STANDARD,
+    value: 'OrderId'
+  },
+  description: {
+    type:  #STANDARD,
+    value: 'CustomerName'
+  }
+}
+
+annotate entity ZC_CDSOrder with
+{
+  @UI.facet: [
+    {
+      id:              'GeneralInformation',
+      purpose:         #STANDARD,
+      type:            #FIELDGROUP_REFERENCE,
+      label:           'General Information',
+      position:        10,
+      targetQualifier: 'GeneralInformation'
+    },
+    {
+      id:              'Dates',
+      purpose:         #STANDARD,
+      type:            #FIELDGROUP_REFERENCE,
+      label:           'Dates',
+      position:        20,
+      targetQualifier: 'Dates'
+    },
+    {
+      id:              'Organization',
+      purpose:         #STANDARD,
+      type:            #FIELDGROUP_REFERENCE,
+      label:           'Organization',
+      position:        30,
+      targetQualifier: 'Organization'
+    },
+    {
+      id:              'Status',
+      purpose:         #STANDARD,
+      type:            #FIELDGROUP_REFERENCE,
+      label:           'Status',
+      position:        40,
+      targetQualifier: 'Status'
+    },
+    {
+      id:            'OrderItems',
+      purpose:       #STANDARD,
+      type:          #LINEITEM_REFERENCE,
+      label:         'Order Items',
+      position:      50,
+      targetElement: '_Items'
+    },
+    {
+      id:              'OrderItemChart',
+      purpose:         #STANDARD,
+      type:            #CHART_REFERENCE,
+      label:           'Order Value by Product',
+      position:        60,
+      targetElement:   '_Items',
+      targetQualifier: 'ItemValues'
+    }    
+  ]
+
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  70
+    }
+  ]
+  OrderValue;
+
+  @UI.hidden: true
+  OrderStatusCriticality;
+
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [
+    {
+      position:   10,
+      importance: #HIGH
+    }
+  ]
+  @UI.identification: [{ position: 10 }]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  10
+    }
+  ]
+  OrderId;
+
+  @UI.selectionField: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  20
+    }
+  ]
+  CustomerId;
+
+  @UI.lineItem: [
+    {
+      position:   20,
+      importance: #HIGH
+    }
+  ]
+  @UI.identification: [{ position: 30 }]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  30
+    }
+  ]
+  CustomerName;
+
+  @UI.lineItem: [
+    {
+      position:   30,
+      importance: #MEDIUM
+    }
+  ]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  40
+    }
+  ]
+  CustomerCity;
+
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem: [
+    {
+      position:   40,
+      importance: #HIGH
+    }
+  ]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'Dates',
+      position:  10
+    }
+  ]
+  OrderDate;
+
+  @UI.lineItem: [
+    {
+      position:   50,
+      importance: #MEDIUM
+    }
+  ]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'Dates',
+      position:  20
+    }
+  ]
+  RequestedDate;
+
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  50
+    }
+  ]
+  OrderType;
+
+  @UI.fieldGroup: [
+    {
+      qualifier: 'GeneralInformation',
+      position:  60
+    }
+  ]
+  OrderTypeText;
+
+  @UI.selectionField: [{ position: 40 }]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'Status',
+      position:  10
+    }
+  ]
+  OrderStatus;
+
+  @UI.lineItem: [
+  {
+    position:    60,
+    importance:  #HIGH,
+    criticality: 'OrderStatusCriticality'
+  }
+  ]
+  @UI.fieldGroup: [
+    {
+      qualifier:  'Status',
+      position:   20,
+      criticality: 'OrderStatusCriticality'
+    }
+  ]
+  OrderStatusText;
+
+  @UI.selectionField: [{ position: 50 }]
+  @UI.lineItem: [
+    {
+      position:   70,
+      importance: #MEDIUM
+    }
+  ]
+  @UI.fieldGroup: [
+    {
+      qualifier: 'Organization',
+      position:  10
+    }
+  ]
+  SalesOrganization;
+
+  @UI.fieldGroup: [
+    {
+      qualifier: 'Organization',
+      position:  20
+    }
+  ]
+  CurrencyCode;
+}

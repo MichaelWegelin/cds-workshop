@@ -1,0 +1,5 @@
+@EndUserText.label: 'CDS Workshop: Fiori Elements Service'
+define service ZUI_CDS_ORDER {
+  expose ZC_CDSOrder     as Orders;
+  expose ZC_CDSOrderItem as OrderItems;
+}
