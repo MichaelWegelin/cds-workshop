@@ -8,6 +8,7 @@ define view entity ZI_CDSOrderItemValue
   key ItemNumber,
 
       ProductId,
+      _Product.CategoryId as CategoryId,
       _Product.ProductName as ProductName,
 
       Quantity,
