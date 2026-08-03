@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DDLS>
-    <DDLNAME>ZI_CDSCATEGORYHIERARCHY</DDLNAME>
+    <DDLNAME>ZI_CDSPRODUCTHIERARCHY</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
     <DDTEXT>CDS Workshop: Category Hierarchy</DDTEXT>
     <SOURCE_TYPE>H</SOURCE_TYPE>

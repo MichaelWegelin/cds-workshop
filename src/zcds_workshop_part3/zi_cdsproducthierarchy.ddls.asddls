@@ -2,17 +2,17 @@
   supportedCapabilities: [ #ANALYTICAL_PARENT_CHILD_HIERARCHY_NODE ],
   modelingPattern: #ANALYTICAL_PARENT_CHILD_HIERARCHY_NODE
 }
-@EndUserText.label: 'CDS Workshop: Category Hierarchy'
+@EndUserText.label: 'CDS Workshop: Product Hierarchy'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 
-define hierarchy ZI_CDSCategoryHierarchy
+define hierarchy ZI_CDSProductHierarchy
   as parent child hierarchy (
-    source ZI_CDSCatHierNode
+    source ZI_CDSProdHierNode
     child to parent association _Parent
 
     start where ParentNodeId is initial
 
-    siblings order by CategoryName ascending
+    siblings order by NodeName ascending
 
     nodetype NodeType
 
@@ -22,12 +22,16 @@ define hierarchy ZI_CDSCategoryHierarchy
   key NodeId,
 
       ParentNodeId,
+      NodeName,
+      NodeType,
       CategoryId,
       CategoryName,
-      NodeType,
-
+      ProductId,
+      ProductName,
+      
       _Parent,
       _Category,
+      _Product,
 
       $node.hierarchy_level       as HierarchyLevel,
       $node.hierarchy_rank        as HierarchyRank,

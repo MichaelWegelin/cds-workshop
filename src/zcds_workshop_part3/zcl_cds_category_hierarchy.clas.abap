@@ -12,10 +12,10 @@ CLASS zcl_cds_category_hierarchy IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-    SELECT FROM ZI_CDSCategoryHierarchy
-      FIELDS CategoryId,
-             ParentCategoryId,
-             CategoryName,
+    SELECT FROM ZI_CDSProductHierarchy
+      FIELDS NodeId,
+             ParentNodeId,
+             NodeName,
              HierarchyLevel,
              HierarchyRank,
              HierarchyParentRank,

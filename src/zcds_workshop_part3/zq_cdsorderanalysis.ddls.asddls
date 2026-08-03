@@ -5,15 +5,16 @@ define transient view entity ZQ_CDSOrderAnalysis
   provider contract analytical_query
   as projection on ZI_CDSOrderCube
 {
-  _Category._Hierarchy as _CategoryHierarchy,
+  _Product._Hierarchy as _ProductHierarchy,
   @Consumption.hidden: true
-  _Category.CategoryId as CategoryDummy,
+  _Product.ProductId as ProductDummy,
   @AnalyticsDetails.query: {
     axis:                  #ROWS,
     displayHierarchy:      #ON,
-    hierarchyAssociation: '_CategoryHierarchy',
-    hierarchyInitialLevel: 3
+    hierarchyAssociation: '_ProductHierarchy',
+    hierarchyInitialLevel: 4
   }
+  ProductId,
   CategoryId,
   
   @AnalyticsDetails.query.axis: #FREE
