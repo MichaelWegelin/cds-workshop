@@ -17,7 +17,10 @@ CLASS zcl_cds_generate_data DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_cds_generate_data IMPLEMENTATION.
+
+
+CLASS ZCL_CDS_GENERATE_DATA IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -365,5 +368,4 @@ CLASS zcl_cds_generate_data IMPLEMENTATION.
     ) ).
 
   ENDMETHOD.
-
 ENDCLASS.

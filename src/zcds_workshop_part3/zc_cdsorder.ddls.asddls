@@ -4,11 +4,9 @@
 
 define view entity ZC_CDSOrder
   as select from ZI_CDSOrder
-  association [0..*] to ZC_CDSOrderItem as _Items
-    on $projection.OrderId = _Items.OrderId
-  association [0..1] to ZI_CDSOrderValue as _OrderValue
-    on  $projection.OrderId      = _OrderValue.OrderId
-    and $projection.CurrencyCode = _OrderValue.CurrencyCode    
+  association [0..*] to ZC_CDSOrderItem  as _Items      on  $projection.OrderId = _Items.OrderId
+  association [0..1] to ZI_CDSOrderValue as _OrderValue on  $projection.OrderId      = _OrderValue.OrderId
+                                                        and $projection.CurrencyCode = _OrderValue.CurrencyCode
 {
   key OrderId,
 
@@ -27,9 +25,16 @@ define view entity ZC_CDSOrder
 
       SalesOrganization,
       CurrencyCode,
+      
       @EndUserText.label: 'Order Value'
       @Semantics.amount.currencyCode: 'CurrencyCode'
       _OrderValue.OrderValue as OrderValue,
+
+      case
+        when _OrderValue.OrderValue >= 5000 then 3
+        when _OrderValue.OrderValue >= 2000 then 2
+        else 1
+      end as OrderValueCriticality,
 
       cast(
         case OrderStatus
@@ -39,7 +44,7 @@ define view entity ZC_CDSOrder
           else          0
         end
         as abap.int1
-      ) as OrderStatusCriticality,      
-      
+      )                      as OrderStatusCriticality,
+
       _Items
 }

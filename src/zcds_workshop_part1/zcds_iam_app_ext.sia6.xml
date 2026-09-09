@@ -32,18 +32,6 @@
         <STATUS>U</STATUS>
         <VALUES>
          <item>
-          <FIELD>ZCUSTOMER</FIELD>
-          <VALUE>C1000</VALUE>
-          <VALUES>
-           <item>
-            <UUID>DtXOl9RMH+GjvZucmS+AYw==</UUID>
-            <LOW_VALUE>C1000</LOW_VALUE>
-           </item>
-          </VALUES>
-          <TEXT>CDS Workshop: Customer ID</TEXT>
-          <STATUS>U</STATUS>
-         </item>
-         <item>
           <FIELD>ACTVT</FIELD>
           <VALUE>Display</VALUE>
           <VALUES>
@@ -55,6 +43,18 @@
           <TEXT>Activity</TEXT>
           <STATUS>U</STATUS>
           <IS_ACTVT>X</IS_ACTVT>
+         </item>
+         <item>
+          <FIELD>ZCUSTOMER</FIELD>
+          <VALUE>C1000</VALUE>
+          <VALUES>
+           <item>
+            <UUID>DtXOl9RMH+GjvZucmS+AYw==</UUID>
+            <LOW_VALUE>C1000</LOW_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>CDS Workshop: Customer ID</TEXT>
+          <STATUS>U</STATUS>
          </item>
         </VALUES>
        </item>

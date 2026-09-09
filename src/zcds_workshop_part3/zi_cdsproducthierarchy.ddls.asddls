@@ -11,11 +11,8 @@ define hierarchy ZI_CDSProductHierarchy
     child to parent association _Parent
 
     start where ParentNodeId is initial
-
     siblings order by NodeName ascending
-
     nodetype NodeType
-
     multiple parents not allowed
   )
 {

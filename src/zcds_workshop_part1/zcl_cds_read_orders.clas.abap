@@ -8,7 +8,9 @@ CLASS zcl_cds_read_orders DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_cds_read_orders IMPLEMENTATION.
+
+CLASS ZCL_CDS_READ_ORDERS IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -83,5 +85,4 @@ CLASS zcl_cds_read_orders IMPLEMENTATION.
     ).
 
   ENDMETHOD.
-
 ENDCLASS.

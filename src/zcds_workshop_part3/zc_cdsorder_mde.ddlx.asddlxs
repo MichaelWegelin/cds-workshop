@@ -67,16 +67,18 @@ annotate entity ZC_CDSOrder with
     }    
   ]
 
-  @UI.fieldGroup: [
-    {
-      qualifier: 'GeneralInformation',
-      position:  70
-    }
-  ]
-  OrderValue;
-
   @UI.hidden: true
   OrderStatusCriticality;
+  @UI.hidden: true
+  OrderValueCriticality;
+  
+  @UI.dataPoint: {
+    qualifier:   'OrderValue',
+    title:       'Total Order Value',
+    criticality: 'OrderValueCriticality'
+  }
+  OrderValue;
+
 
   @UI.selectionField: [{ position: 10 }]
   @UI.lineItem: [

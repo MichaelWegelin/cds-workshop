@@ -1,31 +1,13 @@
 @Metadata.layer: #CUSTOMER
+
 @UI.chart: [
   {
     qualifier:  'ItemValues',
     title:      'Order Value by Product',
     chartType:  #COLUMN,
 
-    dimensions: [
-      'ProductName'
-    ],
-
-    measures: [
-      'NetAmount'
-    ],
-
-    dimensionAttributes: [
-      {
-        dimension: 'ProductName',
-        role:      #CATEGORY
-      }
-    ],
-
-    measureAttributes: [
-      {
-        measure: 'NetAmount',
-        role:    #AXIS_1
-      }
-    ]
+    dimensions: ['ProductName'],
+    measures: ['NetAmount']
   }
 ]
 

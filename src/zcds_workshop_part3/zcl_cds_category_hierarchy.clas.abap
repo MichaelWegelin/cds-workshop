@@ -8,7 +8,9 @@ CLASS zcl_cds_category_hierarchy DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_cds_category_hierarchy IMPLEMENTATION.
+
+CLASS ZCL_CDS_CATEGORY_HIERARCHY IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -27,5 +29,4 @@ CLASS zcl_cds_category_hierarchy IMPLEMENTATION.
     out->write( categories ).
 
   ENDMETHOD.
-
 ENDCLASS.
